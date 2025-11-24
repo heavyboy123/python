@@ -121,7 +121,7 @@ def test_mute_toggle_basic():
 
 
 def test_mute_with_volume_change():
-    """Tests muting and then changing the volume, as described in the manual."""
+
     tv = Television()
     tv.power()
 
@@ -149,10 +149,7 @@ def test_mute_with_volume_change():
 
 
 def test_str_matches_main_example_sequences():
-    """
-    Recreate some of the sequences from main.py comments to be sure
-    behavior and __str__ are exactly as expected.
-    """
+
     tv_1 = Television()
     tv_1.power()
     assert str(tv_1) == "Power = True, Channel = 0, Volume = 0"
